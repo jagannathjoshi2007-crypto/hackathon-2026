@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fd;
+}
+.app-shell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+header {
+  grid-column: 2;
+  padding: 32px;
+}
+.stats {
+  padding: 32px;
+  background: #fff;
+  margin: 24px;
+  border-radius: 16px;
+  box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+}
