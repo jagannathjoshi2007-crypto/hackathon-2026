@@ -24,75 +24,37 @@
 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-
-
 </head>
-
-
 
 <body>
 
-
-
 <div class="container">
-
-
-
 <div class="left">
-
-
-
 <div class="logo">
-
-
 
 <img src="images/logo.png">
 
-
-
 <h2>AssetFlow</h2>
-
-
-
 </div>
-
-
 
 <h1>Enterprise Asset & Resource Management</h1>
 
-
-
 <p>
 
-
-
 Manage company assets,
-
 employees,
-
 maintenance,
 
 resource booking
 
 and reports from one dashboard.
-
-
-
 </p>
-
-
 
 <img src="images/login-bg.png" class="illustration">
 
-
-
 </div>
 
-
-
 <div class="right">
-
-
 
 <div class="login-box">
 
@@ -106,7 +68,7 @@ and reports from one dashboard.
 
 
 
-<form action="dashboard.html">
+<form onsubmit="return loginUser()">
 
 
 
@@ -118,10 +80,10 @@ and reports from one dashboard.
 
 
 
-<input type="email"
-
+<input 
+type="email"
+id="email"
 placeholder="Email Address"
-
 required>
 
 
@@ -138,10 +100,10 @@ required>
 
 
 
-<input type="password"
-
+<input 
+type="password"
+id="password"
 placeholder="Password"
-
 required>
 
 
@@ -184,36 +146,20 @@ Forgot Password?
 
 </div>
 
-
-
-<button>
-
-
-
+<button type="submit">
 Login
 
 
 
 </button>
-
-
-
 </form>
 
 
 
+
 <div class="line">
-
-
-
 <span>
-
-
-
 OR
-
-
-
 </span>
 
 
@@ -267,17 +213,8 @@ Create Account
 
 
 </div>
-
-
-
 </div>
-
-
-
 <script src="js/login.js"></script>
-
-
-
 </body>
 
-</html
+</html>

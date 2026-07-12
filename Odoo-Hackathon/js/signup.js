@@ -1,15 +1,28 @@
-const form = document.querySelector("form");
+function signupUser(){
 
-form.addEventListener("submit",function(e){
+    let name = document.getElementById("name").value;
 
-    const password = document.querySelectorAll("input[type='password']");
+    let email = document.getElementById("email").value;
 
-    if(password[0].value !== password[1].value){
+    let password = document.getElementById("password").value;
 
-        e.preventDefault();
 
-        alert("Passwords do not match!");
+    if(name && email && password){
+
+        alert("Account Created Successfully. Please Login");
+
+
+        window.location.href="index.html";
+
+
+    }
+    else{
+
+        alert("Please fill all details");
 
     }
 
-});
+
+    return false;
+
+}

@@ -1,63 +1,29 @@
-// ===============================
-// AssetFlow Login Page
-// ===============================
+function loginUser(){
 
-// Password Show / Hide
+    let email = document.getElementById("email").value;
 
-const password = document.querySelector('input[type="password"]');
+    let password = document.getElementById("password").value;
 
-if(password){
 
-    const eye = document.createElement("i");
+    if(email === "admin@gmail.com" && password === "123456"){
 
-    eye.className = "fa-solid fa-eye";
 
-    eye.style.cursor = "pointer";
+        localStorage.setItem("user","Admin");
 
-    eye.style.marginLeft = "10px";
 
-    password.parentElement.appendChild(eye);
+        window.location.href="dashboard.html";
 
-    eye.addEventListener("click",()=>{
 
-        if(password.type==="password"){
+    }
+    else{
 
-            password.type="text";
 
-            eye.classList.remove("fa-eye");
+        alert("Invalid Email or Password");
 
-            eye.classList.add("fa-eye-slash");
-
-        }else{
-
-            password.type="password";
-
-            eye.classList.remove("fa-eye-slash");
-
-            eye.classList.add("fa-eye");
-
-        }
-
-    });
-
-}
-
-// Login Validation
-
-const form=document.querySelector("form");
-
-form.addEventListener("submit",function(e){
-
-    const email=document.querySelector("input[type='email']").value;
-
-    const pass=document.querySelector("input[type='password']").value;
-
-    if(email==="" || pass===""){
-
-        e.preventDefault();
-
-        alert("Please fill all fields.");
 
     }
 
-});
+
+    return false;
+
+}
