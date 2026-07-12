@@ -1,6 +1,6 @@
-/* ===============================
-   AssetFlow Login Page
-================================= */
+/* ==========================
+   AssetFlow Signup Page
+========================== */
 
 *{
     margin:0;
@@ -10,20 +10,19 @@
 }
 
 body{
-    background:#f3f5ff;
+    background:#f4f6ff;
 }
 
 .container{
-    width:100%;
-    height:100vh;
     display:flex;
+    height:100vh;
 }
 
-/* LEFT SIDE */
+/* Left Panel */
 
 .left{
-    width:45%;
-    background:linear-gradient(135deg,#5b3df5,#7b61ff);
+    width:42%;
+    background:linear-gradient(135deg,#4F46E5,#6D28D9);
     color:white;
     padding:60px;
     display:flex;
@@ -43,12 +42,12 @@ body{
 }
 
 .logo h2{
-    font-size:36px;
+    font-size:34px;
+    font-weight:700;
 }
 
 .left h1{
     font-size:42px;
-    line-height:55px;
     margin-bottom:20px;
 }
 
@@ -56,37 +55,35 @@ body{
     font-size:18px;
     line-height:32px;
     opacity:.9;
-    margin-bottom:40px;
 }
 
 .illustration{
     width:90%;
-    max-width:450px;
-    margin:auto;
+    margin-top:40px;
 }
 
-/* RIGHT SIDE */
+/* Right Panel */
 
 .right{
-    width:55%;
+    width:58%;
+    background:white;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:white;
 }
 
-.login-box{
-    width:420px;
+.signup-box{
+    width:450px;
 }
 
-.login-box h2{
-    font-size:38px;
+.signup-box h2{
+    font-size:36px;
     color:#222;
 }
 
-.login-box p{
-    color:#777;
+.signup-box p{
     margin:10px 0 30px;
+    color:#777;
 }
 
 .input-box{
@@ -95,13 +92,17 @@ body{
     border:1px solid #ddd;
     border-radius:12px;
     padding:15px;
-    margin-bottom:20px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.input-box:hover{
+    border-color:#5B3DF5;
 }
 
 .input-box i{
-    color:#5b3df5;
+    color:#5B3DF5;
     margin-right:12px;
-    font-size:18px;
 }
 
 .input-box input{
@@ -111,24 +112,12 @@ body{
     font-size:16px;
 }
 
-.remember{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:25px;
-    font-size:14px;
-}
-
-.remember a{
-    color:#5b3df5;
-    text-decoration:none;
-}
-
 button{
     width:100%;
     padding:16px;
     border:none;
     border-radius:12px;
-    background:#5b3df5;
+    background:#5B3DF5;
     color:white;
     font-size:18px;
     cursor:pointer;
@@ -136,34 +125,22 @@ button{
 }
 
 button:hover{
-    background:#4224df;
+    background:#4328d5;
 }
 
-.line{
-    text-align:center;
-    margin:25px 0;
-    color:#999;
-}
-
-.google{
-    background:white;
-    color:#333;
-    border:1px solid #ddd;
-}
-
-.google:hover{
-    background:#f8f8f8;
-}
-
-.signup{
+.login{
     text-align:center;
     margin-top:25px;
 }
 
-.signup a{
-    color:#5b3df5;
-    font-weight:600;
+.login a{
+    color:#5B3DF5;
     text-decoration:none;
+    font-weight:600;
+}
+
+.login a:hover{
+    text-decoration:underline;
 }
 
 /* Responsive */
@@ -181,10 +158,11 @@ button:hover{
 
 .left{
     text-align:center;
+    align-items:center;
     padding:40px;
 }
 
-.login-box{
+.signup-box{
     width:90%;
     padding:40px 0;
 }

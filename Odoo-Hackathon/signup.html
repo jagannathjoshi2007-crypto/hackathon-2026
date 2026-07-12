@@ -1,25 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup | Odoo Hackathon</title>
-    <link rel="stylesheet" href="css/login.css" />
-  </head>
-  <body>
-    <main>
-      <h1>Signup</h1>
-      <form>
-        <label>Name</label>
-        <input type="text" placeholder="Enter your name" />
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email" />
-        <label>Password</label>
-        <input type="password" placeholder="Enter your password" />
-        <button type="submit">Create account</button>
-      </form>
-      <p><a href="index.html">Already have an account?</a></p>
-    </main>
-    <script src="js/login.js"></script>
-  </body>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AssetFlow | Sign Up</title>
+
+<link rel="stylesheet" href="css/signup.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+
+    <div class="left">
+
+        <div class="logo">
+
+            <img src="images/logo.png">
+
+            <h2>AssetFlow</h2>
+
+        </div>
+
+        <h1>Create Your Account</h1>
+
+        <p>
+
+            Join AssetFlow and manage enterprise assets,
+            maintenance, booking and reports from one dashboard.
+
+        </p>
+
+        <img src="images/login-bg.png" class="illustration">
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="right">
+
+        <div class="signup-box">
+
+            <h2>Create Account</h2>
+
+            <p>Fill your information below</p>
+
+            <form action="dashboard.html">
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input type="text"
+                    placeholder="Full Name"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input type="email"
+                    placeholder="Email Address"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <input type="tel"
+                    placeholder="Phone Number"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    <input type="text"
+                    placeholder="Department"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password"
+                    placeholder="Password"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password"
+                    placeholder="Confirm Password"
+                    required>
+
+                </div>
+
+                <button>
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <div class="login">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/signup.js"></script>
+
+</body>
+
 </html>
